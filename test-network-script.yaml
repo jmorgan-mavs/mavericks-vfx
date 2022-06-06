@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
   - name: "Execute command!"
-    command: /mav/stor/homes/jmorgan/scripts/whoami.sh
+    ansible.builtin.shell: /mav/stor/homes/jmorgan/scripts/whoami.sh
     register: who
   - name: "Result"
     debug:
