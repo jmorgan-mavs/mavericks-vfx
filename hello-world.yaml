@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: lin
   tasks:
     - name: Print message
       debug:
