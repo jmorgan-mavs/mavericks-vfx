@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
   - name: "Execute command!"
-    command: cat /etc/os-release
+    command: cat /etc/system-release
     register: who
   - name: "Result"
     debug:
