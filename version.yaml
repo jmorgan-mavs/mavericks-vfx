@@ -1,0 +1,11 @@
+---
+- hosts: lin
+  become: no
+  gather_facts: no
+  tasks:
+  - name: "Execute command!"
+    command: cat /etc/*release
+    register: who
+  - name: "Result"
+    debug:
+      msg: "{{who}}"
