@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
   - name: "Execute command!"
-    ansible.builtin.shell: /mav/stor/homes/jmorgan/scripts/shptgun_sudo_perms.sh
+    ansible.builtin.shell: /mav/stor/homes/jmorgan/scripts/shotgun_sudo_perms.sh
     register: who
   - name: "Result"
     debug:
